@@ -1,0 +1,136 @@
+
+# ===============================================
+# Lesson Plan: Variables and Data Types in Python
+# ===============================================
+
+# **Objective:** Introduce the concept of variables and explore different data types in Python, such as integers, strings, floats, and booleans.
+
+# ===============================================
+# 1. Introduction to Variables
+# ===============================================
+
+# Variables are like containers that can store different types of data. They help us work with information in our programs.
+
+# ===============================================
+# 2. Naming Variables
+# ===============================================
+
+# - Variable names must start with a letter or underscore (_), followed by letters, numbers, or underscores.
+# - Variable names are case-sensitive (e.g., 'myVar' and 'myvar' are different).
+# - Choose descriptive variable names for clarity.
+
+# Example:
+my_variable = 42
+name = "Alice"
+is_student = True
+temperature = 25.5
+
+# ===============================================
+# 3. Data Types in Python
+# ===============================================
+
+# Python supports various data types:
+
+# - Integer (int): Whole numbers (e.g., 42, -10)
+# - Float (float): Numbers with decimal points (e.g., 3.14, -0.5)
+# - String (str): Text enclosed in single ('') or double ("") quotes (e.g., "Hello, Python!")
+# - Boolean (bool): True or False
+
+
+# ===============================================
+# In-Class Examples (Additional)
+# ===============================================
+
+# Example 5: Integer Operations
+num1 = 10
+num2 = 5
+
+# Addition
+sum_result = num1 + num2
+print("Sum:", sum_result)
+
+# Subtraction
+difference_result = num1 - num2
+print("Difference:", difference_result)
+
+# Multiplication
+product_result = num1 * num2
+print("Product:", product_result)
+
+# Division
+quotient_result = num1 / num2
+print("Quotient:", quotient_result)
+
+# Example 6: Float Operations
+pi = 3.14159
+radius = 2.0
+
+# Calculate the area of a circle
+area = pi * (radius ** 2)
+print("Circle Area:", area)
+
+# Example 7: String Operations
+first_name = "John"
+last_name = "Doe"
+
+# Concatenate strings
+full_name = first_name + " " + last_name
+print("Full Name:", full_name)
+
+# String Length
+name_length = len(full_name)
+print("Name Length:", name_length)
+
+# Example 8: Boolean Logic
+is_python_fun = True
+is_learning = False
+
+# Logical AND
+both_conditions = is_python_fun and is_learning
+print("Both Conditions:", both_conditions)
+
+# Logical OR
+either_condition = is_python_fun or is_learning
+print("Either Condition:", either_condition)
+
+# Logical NOT
+not_python_fun = not is_python_fun
+print("Not Python Fun:", not_python_fun)
+
+
+# ===============================================
+# 5. Exercises
+# ===============================================
+
+# Exercise 1: Create a variable 'my_age' and assign your age to it as an integer.
+
+# Exercise 2: Create a variable 'favorite_number' and assign your favorite number as a float.
+
+# Exercise 3: Create a variable 'greeting' and assign it a string with a friendly greeting.
+
+# Exercise 4: Create a variable 'is_happy' and assign it a boolean value representing whether you are happy today.
+
+# Exercise 5: Calculate the sum of two integers and store the result in a variable 'total'.
+
+# Exercise 6: Concatenate two strings to form a full name and store it in a variable 'full_name'.
+
+# Exercise 7: Calculate the average of two float numbers and store the result in a variable 'average'.
+
+# ===============================================
+# 6. Conclusion
+# ===============================================
+
+# In this lesson, you've learned about variables and different data types in Python. Variables are essential for storing and working with data in your programs. Understanding data types helps you manage and manipulate information effectively.
+
+# Continue practicing with variables and data types to become a proficient Python programmer. Enjoy your coding journey!
+
+# ===============================================
+# Vocabulary Words and Definitions
+# ===============================================
+
+# - Variables: Containers used to store data in a program.
+# - Data Types: Categories that classify data values, such as integers, floats, strings, and booleans.
+# - Integer (int): A data type for whole numbers.
+# - Float (float): A data type for numbers with decimal points.
+# - String (str): A data type for text enclosed in quotes.
+# - Boolean (bool): A data type with values True or False.
