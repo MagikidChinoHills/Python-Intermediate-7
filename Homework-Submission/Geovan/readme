@@ -1,1 +1,9 @@
+My_Age = 11
+My_Name = "Geovan Zheng"
+Tempature = 78.4
+Sunny = False
 
+print("My age is", My_Age)
+print("My name is", My_Name)
+print("The tempature outside is", Tempature, "degrees")
+print("It is sunny:", Sunny)
