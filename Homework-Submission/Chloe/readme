@@ -1,1 +1,43 @@
+# problem 1
+#1. :
+age = input ('What is your name?')
+frstname = "Chloe"
+Midname = Leyi
+Last_name = Cao
+Fllname = frstname + Midname + Lastname
+temp = 87.0_degrees_ferenheight
+#I don't know if a .0 counts as a float, but I think it does
+#The weather just said 87 F so I put 87.0 to make it a float 
+Sunny_yes = True
+Sunny_no = False
+sunnyOverll = Sunny_yes or Sunny_no
+#2.
+print ('My age is', age)
+print (Fllname)
+print (temp)
+print('It is',sunnyOverll)
+print ('that is it sunny')
+#I put the extra line because if I printed sunnyOverll then it would say "true"
+#And "It is True" wouldn't make sense because it doesn't say WHAT'S true.
+#3.
+#age contains data that says what the user typed in the console.
+#frstname, Midname,and Last_name together say what the three variables contain in the order in which they are typed in line 97.
+#temp contains data that explains what temperature is IN DECIMALS.
+#SunnyOverll contains a boolean that tells us (true or false) if at least ONE of Sunny_yes or Sunny_no is true.
+#problem 2.
+#4.
+age = input ('What is your age?')
+temperature = input ('Enter a temperature in Celsius.')
+temp_2 = temperature
+temp_3 = ('.35')
+temp_2 = temperature + temp_3
+Temp_aftr = temp_2
+# ：（ That's a lot of variables.
+Result = ('Your age is')
+Result2 = age
+Result3 = ('!')
+Result4 =  Result + Result2 + Result3
+print (Result4)
+print ('The temperature in Celcius is', temperature)
+
 
