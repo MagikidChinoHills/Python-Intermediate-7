@@ -1,3 +1,4 @@
+#Problem 1
 My_Age = 11
 My_Name = "Geovan Zheng"
 Tempature = 78.4
@@ -7,3 +8,13 @@ print("My age is", My_Age)
 print("My name is", My_Name)
 print("The tempature outside is", Tempature, "degrees")
 print("It is sunny:", Sunny)
+
+#The age variable is a int value becausee it has a whole number with no decimal
+#The name variable is a string because it contains characters
+#The tempature variable is a float because it contains decimals
+#The sunny variable is a boolean because it is true or false
+
+#When I print a certian variable, it prints out the letters, numbers, or words that where contained inside of them.
+
+#Problem 2
+
