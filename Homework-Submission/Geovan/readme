@@ -18,3 +18,13 @@ print("It is sunny:", Sunny)
 
 #Problem 2
 
+Age = input("How old are you? ")
+Old = int(Age)
+print("\nYou are " + Age + " years old.")
+
+
+temperature = input("What is the temperature in celcius?")
+celcius = float(temperature)
+fahrenheit = float((celcius * 9/5) + 32)
+print("\nThe temperature is",  celcius, "°C or", fahrenheit, "°F.")
+  
