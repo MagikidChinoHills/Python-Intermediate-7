@@ -1,30 +1,39 @@
 #Problem 1
 My_Age = 11
 My_Name = "Geovan Zheng"
-Tempature = 78.4
+Temperature = 78.4
 Sunny = False
 
 print("My age is", My_Age)
 print("My name is", My_Name)
-print("The tempature outside is", Tempature, "degrees")
+print("The temperature outside is", Temperature, "degrees")
 print("It is sunny:", Sunny)
 
-#The age variable is a int value becausee it has a whole number with no decimal
-#The name variable is a string because it contains characters
-#The tempature variable is a float because it contains decimals
-#The sunny variable is a boolean because it is true or false
+#The My_Age variable is an int value because it has a whole number with no decimal
+#The My_Name variable is a string because it contains characters
+#The Temperature variable is a float because it contains decimals
+#The Sunny variable is a boolean because it is true or false
 
-#When I print a certian variable, it prints out the letters, numbers, or words that where contained inside of them.
+#When I print a certain variable, it prints out the letters, numbers, or words that is contained inside the variable.
 
 #Problem 2
 
 Age = input("How old are you? ")
 Old = int(Age)
-print("\nYou are " + Age + " years old.")
+print("\nYou are", Old ,"years old.")
 
+#The Age variable will store the inputted value
+#The Old variable will turn the Age variable into an int value.
+#The print command will print out the Old variable.
 
 temperature = input("What is the temperature in celcius?")
 celcius = float(temperature)
 fahrenheit = float((celcius * 9/5) + 32)
 print("\nThe temperature is",  celcius, "°C or", fahrenheit, "°F.")
-  
+
+#The temperature variable will store the inputted value.
+#The celcius variable will turn the temperature variable into a float value.
+#The fahrenheit variable will calculate the celcius value into a fahrenheit value.
+#The print command will print out the celcius and fahrenheit variable.
+
+
