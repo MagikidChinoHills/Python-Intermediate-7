@@ -1,0 +1,37 @@
+#Homework 2
+#problem 1
+#1
+num1 = 7
+num2 = 10
+#2
+num3 = num1 + num2
+num4 = num2 - num1
+num5 = num1 * num2
+num6 = num1 / num2
+num7 = num2%num1
+#3
+print ('The sum is', num3)
+print ('The difference is', num4) 
+print ('The product is', num5)
+print ('The quotient is', num6)
+print ('The remainder is', num7)
+#problem 2
+#4 + #5
+if num1 == num2 :
+    print ('They are equal!')
+else :
+    print ('They are not equal!')
+if num1 > num2 :
+    print ('Num1 is greater than Num2!')
+elif num1 < num2 :
+    print ('Num1 is less than num21')
+elif num1 >= num2 :
+    print ('num1 is greater than or equal to num2!')
+elif num1 <= num2 :
+    print ('num1 is less than or equal to num2!')
+num9 = num1 > 0 and num2 < 10
+print (num9) 
+num10 = num1 == 5 or num2 == 8
+print (num10)
+num11 = not num1 == num2\
+print (num11)
