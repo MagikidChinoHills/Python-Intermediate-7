@@ -1,5 +1,5 @@
-num1 = 75
-num2 = 23
+num1 = 23
+num2 = 7
 
 Sum = num1 + num2
 Sum2 = num1 - num2
@@ -28,4 +28,11 @@ print("Is num1 is greater to num2:", result3)
 print("Is num1 is less to num2:", result4)
 print("Is num1 is greater or equal to num2:", result5)
 print("Is num1 is less or equal to num2:", result6)
+
+testing1 = num1 > 0 and num2 < 10
+testing2 = num1 == 5 or num2 == 8
+testing3 = num1 != num2
+print(testing1)
+print(testing2)
+print(testing3)
 
