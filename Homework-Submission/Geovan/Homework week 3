@@ -1,0 +1,31 @@
+num1 = 75
+num2 = 23
+
+Sum = num1 + num2
+Sum2 = num1 - num2
+Sum3 = num1 * num2
+Sum4 = num1 / num2
+Sum5 = num1 % num2
+
+print("The sum is",Sum)
+print("The difference is",Sum2)
+print("The product is",Sum3)
+print("The quotient is",Sum4)
+print("The remainder is",Sum5)
+
+
+
+result = num1 == num2
+result2 = num1 != num2
+result3 = num1 > num2
+result4 = num1 < num2
+result5 = num1 >= num2
+result6 = num1 <= num2
+
+print("Is num1 is equal to num?:", result)
+print("Is num1 is not equal to num?:", result2)
+print("Is num1 is greater to num2:", result3)
+print("Is num1 is less to num2:", result4)
+print("Is num1 is greater or equal to num2:", result5)
+print("Is num1 is less or equal to num2:", result6)
+
