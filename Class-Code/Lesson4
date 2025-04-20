@@ -1,0 +1,167 @@
+# ===============================================
+# Lesson Plan: Conditional Statements (if, elif, else) in Python
+# ===============================================
+
+# **Objective:** Introduce conditional statements for decision-making in Python.
+
+# ===============================================
+# 1. Introduction to Conditional Statements
+# ===============================================
+
+# Conditional statements allow us to make decisions in our programs. They help us execute different code blocks based on specified conditions.
+
+# ===============================================
+# 2. The "if" Statement
+# ===============================================
+
+# The "if" statement is used to execute a block of code if a condition is True.
+
+# Example:
+age = 18
+
+if age >= 18:
+    print("You are an adult.")
+
+# ===============================================
+# 3. The "elif" Statement
+# ===============================================
+
+# The "elif" (short for "else if") statement is used to specify multiple conditions to check.
+
+# Example:
+temperature = 25
+
+if temperature > 30:
+    print("It's hot outside.")
+elif temperature > 20:
+    print("It's a pleasant day.")
+else:
+    print("It's a bit chilly.")
+
+# ===============================================
+# 4. The "else" Statement
+# ===============================================
+
+# The "else" statement is used to execute a block of code if the condition specified in the "if" statement is False.
+
+# Example:
+num = 7
+
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+# ===============================================
+# 5. Nested Conditional Statements
+# ===============================================
+
+# Conditional statements can be nested inside each other to handle more complex situations.
+
+# Example:
+x = 10
+y = 5
+
+if x > y:
+    if x % 2 == 0:
+        print("x is greater and even.")
+    else:
+        print("x is greater and odd.")
+else:
+    print("y is greater.")
+
+# ===============================================
+# In-Class Examples (Additional)
+# ===============================================
+
+# Example 1: Checking if a Number is Even or Odd
+num = 15
+
+if num % 2 == 0:
+    print(num, "is even.")
+else:
+    print(num, "is odd.")
+
+# Example 2: Determining Eligibility for Voting
+age = 20
+
+if age >= 18:
+    print("You are eligible to vote.")
+else:
+    print("You are not eligible to vote yet.")
+
+# Example 3: Checking Leap Year
+year = 2024
+
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(year, "is a leap year.")
+else:
+    print(year, "is not a leap year.")
+
+# Example 4: Basic Calculator
+num1 = float(input("Enter the first number: "))
+operator = input("Enter an operator (+, -, *, /): ")
+num2 = float(input("Enter the second number: "))
+
+if operator == '+':
+    result = num1 + num2
+    print("Result:", result)
+elif operator == '-':
+    result = num1 - num2
+    print("Result:", result)
+elif operator == '*':
+    result = num1 * num2
+    print("Result:", result)
+elif operator == '/':
+    if num2 == 0:
+        print("Error: Division by zero.")
+    else:
+        result = num1 / num2
+        print("Result:", result)
+else:
+    print("Invalid operator. Please enter +, -, *, or /.")
+
+# Example 5: Nested Conditional Statements
+x = 15
+y = 10
+
+if x > y:
+    if x % 5 == 0:
+        print("x is greater and divisible by 5.")
+    else:
+        print("x is greater but not divisible by 5.")
+else:
+    if y % 5 == 0:
+        print("y is greater and divisible by 5.")
+    else:
+        print("y is greater but not divisible by 5.")
+
+# ===============================================
+# 6. Exercises
+# ===============================================
+
+# Exercise 1: Write a program that checks if a number is positive, negative, or zero, and prints an appropriate message.
+
+# Exercise 2: Create a program that asks the user for their age and prints whether they are a child, teenager, or adult based on age ranges.
+
+# Exercise 3: Write a program that determines if a year is a leap year. Leap years are divisible by 4 but not divisible by 100, except when divisible by 400.
+
+# Exercise 4: Implement a basic calculator that takes two numbers and an operator (+, -, *, /) as input and performs the corresponding operation.
+
+# ===============================================
+# 7. Conclusion
+# ===============================================
+
+# In this lesson, you've learned about conditional statements in Python, including the "if," "elif," and "else" statements. These statements enable you to make decisions and execute specific code blocks based on conditions.
+
+# Practice using conditional statements to control the flow of your programs and make them more dynamic and responsive.
+
+# ===============================================
+# Vocabulary Words and Definitions
+# ===============================================
+
+# - Conditional Statements: Statements that allow different code blocks to be executed based on specified conditions.
+# - "if" Statement: A conditional statement used to execute a block of code if a condition is True.
+# - "elif" Statement: A conditional statement used to specify multiple conditions to check after the initial "if" statement.
+# - "else" Statement: A conditional statement used to execute a block of code if the condition in the "if" statement is False.
+# - Nested: Placing one construct (e.g., conditional statement) inside another construct of the same kind.
