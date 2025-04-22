@@ -10,3 +10,17 @@ else :
 	print ('Your number is negative.
 #Problem 2
 #4.-5.
+inputage = int(input ('What is your age?'))
+if (inputage == 0 ) and (inputage <= 12) :
+	print ('you are a child!')
+elif (inputage > 12) and (inputage <= 19) :
+	print ('you are a teenager.')
+	if inputage >= 18 :
+		print ('You should vote, you are voting age!')
+elif (inputage > 19) and (inputage <= 59) :
+	print ('you are an adult.')
+else:
+	print ('you are a senior.')
+#The purpose of the first if is to determine if the user is a child. Without it, it would be impossible for the program to say the user is a child.
+# It checks if "inputage" is 0, less than 12, 
+#The purpose of the first elif is to 
