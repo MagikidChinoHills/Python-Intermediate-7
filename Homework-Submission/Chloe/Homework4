@@ -19,8 +19,20 @@ elif (inputage > 12) and (inputage <= 19) :
 		print ('You should vote, you are voting age!')
 elif (inputage > 19) and (inputage <= 59) :
 	print ('you are an adult.')
-else:
+	if inputage >= 18 :
+		print ('You should vote, you are voting age!')
+elif inputage >= 60 :
 	print ('you are a senior.')
+	if inputage >= 18 :
+		print ('You should vote, you are voting age!')
 #The purpose of the first if is to determine if the user is a child. Without it, it would be impossible for the program to say the user is a child.
-# It checks if "inputage" is 0, less than 12, 
-#The purpose of the first elif is to 
+# It checks if "inputage" is 0, less than 12, or equal to 12.
+#The purpose of the first elif is to determine if the user is a teenager. Without it, it would be impossible for the program to say the user is a teen.
+# It checks if "inputage" is greater than twelve, less than 19, or equal to 19.
+#The purpose of the second elif is to determine if the user is an adult. Without it, it would be impossible for the program to say the user is an adult.
+# It checks if "inputage" is greater than 19, less than 59, or equal to 59.
+#The purpose of the third elif is to determine if the user is a senior. Without it, it would be impossible for the program to say the user is a senior.
+#It is an elif because if I put else, then it would say if we put negative 5, we would be a senior, and that wouldn't be right.
+# It checks if "inputage" is anything higher than 59.
+# The second, third, and fourth if checks if the user is more than 18 years of age, and if so, tells them to vote because they are qualified.
+
