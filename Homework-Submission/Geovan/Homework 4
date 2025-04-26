@@ -1,0 +1,32 @@
+Number = input("put a number and I will tell you if it is positive, negitive, or 0:")
+number = float(Number)
+if number > 0:
+    print(number, "is a positive number")
+elif number < 0:
+    print(number, " is a negitive number")
+elif number == 0:
+    print(number, "is exactly 0")
+else:
+    print("Print a number")
+
+
+
+#problem 2
+Age = input("Type your age and I will catigorize it:")
+age = float(Age)
+if age < 0:
+    print("How?")
+elif age <= 12:
+    print("You are classified as a kid.")
+elif age <= 17:
+    print("You are classified as a teenager")
+elif age <= 19:
+    print("Your a teenager, also you should try voting!")
+elif age <= 59:
+    print("You are classified as a adult.")
+elif age <= 130:
+    print("You are classified as an grandpa/grandma")
+elif age <= 80000000:
+    print("You shouldn't be alive at this age, but you're an grandpa/grandma")
+else:
+    print("You're a litteral dinosaur at this age.")
