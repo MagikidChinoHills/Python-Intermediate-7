@@ -1,0 +1,15 @@
+#Homework 5
+#part 1:
+#1.
+#A list is a group of srung together strings, integers, flats, or just any type of data.
+#a tuple is the same as a list except it is imutable
+#Indexing is a way of numbering the things in a list or tuple but it always starts from 0.
+#Mutability is the ability of being editable
+#Immutability is the ability of being only being able to be edited withing the code the code that made the immutable thing.
+#2.
+#The difference between a list and a tuple is that a list is mutable and a tuple is IMmutable.
+#3. 
+#how indexing works is numbering the place of the data within lists and tuples. It starts from 0 and apparently goes to the end of the list if you put negative 1.it shows an error when you put a positive number out of the range of the list or tuple.
+：]
+#Part 2:
+#4.
