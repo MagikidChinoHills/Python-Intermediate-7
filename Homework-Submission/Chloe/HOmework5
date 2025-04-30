@@ -13,3 +13,18 @@
 ：]
 #Part 2:
 #4.
+listee = [1, 2, 3, 4, 5, 6, 7, 8, 9,]
+listee.append(10)
+listee.remove(5)
+listee[9] = 100
+print (listee)
+#5.
+tup = ("icee", "myy")
+tup.append ("error")
+tupp = ('icethee', 'mwy')
+tuup = tup + tupp
+print (tuup)
+#6
+#There are many different ways lists and tuples can be compared.
+#First, lists and tuples are the same because the code to make them are the same excempt for that a list is made with brakets and tuples are made with parenthses.
+#Second, lists and tuples are also the same because 
