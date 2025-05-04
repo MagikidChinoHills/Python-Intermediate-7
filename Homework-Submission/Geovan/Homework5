@@ -50,6 +50,11 @@ tuple1 = ("Cat","Dog","Horse")
 w = tuple1[0]
 print(w)
 
-Tuple3 = tuple1 + tuple2
+tuple3 = tuple1 + tuple2
 print(tuple3)
 
+Tuples and Lists are very similar, but are also very different. I will be telling you how.
+Lists and tuples both store something inside of them and are nearly identical, but lists are editable while tuples aren't.
+Tuples are uneditable with other lines of code and are only editable if you change the original code.
+List are able to be changed with other lines of codes without changing the main code.
+Personally, I like Lists more because it is more flexable.
