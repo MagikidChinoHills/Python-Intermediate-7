@@ -11,4 +11,7 @@ Ctnnme = fllnme.find ('Chloe')
 put = input ('Enter a sentence.')
 lentence = len(put)
 print (lentence)
-tence = 
+tence = upper(put)
+print (tence)
+tece = lower(put)
+print (tece)
