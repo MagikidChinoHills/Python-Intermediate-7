@@ -1,0 +1,14 @@
+#homework 6
+#Problem 1.
+fllnme = "Chloe - Leyi - Cao"
+Nmprnt = "Hello, my name is:" + (fllnme)
+Ctnnme = fllnme.split()
+print (Ctnnem)
+#Problem 2.
+fllnme = "Chloe - Leyi - Cao"
+Nmprnt = "Hello, my name is:" + (fllnme)
+Ctnnme = fllnme.find ('Chloe')
+put = input ('Enter a sentence.')
+lentence = len(put)
+print (lentence)
+tence = 
