@@ -1,0 +1,29 @@
+Name = input(str("Write your full name"))
+print("Hello, my name is", Name,".")
+cut_name = Name[0:7]
+print("My first name is ",cut_name,".")
+
+sentence = input("Write a sentence however long you want.")
+length = len(sentence)
+print("Your sentence has",length,"letters including spaces and symbols")
+Up = sentence.upper()
+print(Up)
+lower = sentence.lower()
+print(lower)
+Correct = sentence.capitalize()
+print(Correct)
+count_thing  =  sentence.count("A")
+count_thing2 = sentence.count("a")
+print("Your sentence has", count_thing,"uppercase A's and ",count_thing2,"lowercase a's." )
+
+from datetime import date
+Date = date(2025, 5, 11)
+
+print("Whenn you are reading this, it should be",Date)
+Number_test1 = input("Pick a number to multiply")
+numtest1 = float(Number_test1)
+Number_test2 = input("Pick another number to multiply")
+numtest2 = float(Number_test2)
+answer = numtest1 * numtest2
+Answer = "{} times {} is equal to {}".format(numtest1, numtest2, answer)
+print(Answer)
