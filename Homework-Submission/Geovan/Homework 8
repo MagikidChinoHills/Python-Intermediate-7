@@ -1,0 +1,61 @@
+person = {
+    "name" : "Johnny",
+    "age" : "10",
+    "city" : "Los Angeles",
+    "job" : "Student",
+    }
+print(person)
+Name = person["name"]
+Age = person["age"]
+City = person["city"]
+Job = person["job"]
+print(Name, "is", Age, "years old. He lives in", City, "and works as a", Job ,".")
+person["age"] = 11
+print(person)
+
+
+
+
+inventory = {
+    "Potion of health" : "2 remianing",
+    "Bread" : "7 remaining",
+    "Axe" : "56% durrabilaty"
+    }
+print("Before inventory", inventory)
+inventory["Potion of stealth"] = "2 Remaining"
+del inventory["Potion of health"]
+inventory["Bread"] = "10 remaining"
+Bread = "Bread"
+if Bread in inventory:
+    print("You have bread")
+else:
+    print("You have no bread")
+print("There is bread in your inventory")
+print(inventory)
+
+
+
+
+set1 = {1, 5, 6, 3, 8, 9, 7}
+set2 = {4, 7, 8, 4, 9, 0, 3, 2}
+
+union_set = set1.union(set2)
+print(union_set)
+
+i_set = set1.intersection(set2)
+print(i_set)
+
+dif_set = set1.difference(set2)
+print(dif_set)
+
+
+
+
+Random_numbers = [2,5,2,7,9,4,7,9,0,4,5,7,9,5,3]
+print(Random_numbers)
+New = set(Random_numbers)
+
+print(New) 
+
+
+
