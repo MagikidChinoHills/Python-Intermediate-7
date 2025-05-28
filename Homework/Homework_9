@@ -1,0 +1,47 @@
+Homework Assignment: Advanced Operations on Lists, Tuples, Dictionaries, and Sets
+
+Objective: The primary objective of this assignment is to deepen students' understanding of Lists, Tuples, Dictionaries, and Sets by covering advanced methods, properties, manipulation, and indexing.
+
+Instructions:
+
+Problem 1: Advanced List Operations
+
+1. Write a Python script that initializes a list of integers. Implement the following operations:
+   - Use the `map()` function to square each element in the list.
+   - Use list comprehension to create a new list containing only the even numbers from the original list.
+
+2. Extend the script to:
+   - Use the `sorted()` function to sort the list in descending order.
+   - Remove duplicates from the list without changing the order.
+
+Problem 2: Exploring Tuple Properties
+
+3. Create a tuple that represents the RGB values of a color (e.g., `(255, 0, 0)` for red). Write a function that takes a tuple as an argument and prints its length, sum of values, and average.
+
+4. Implement a program that converts the RGB tuple into a hexadecimal color code. Print the resulting color code.
+
+Problem 3: Dictionary Manipulation
+
+5. Write a Python script that initializes a dictionary representing the population of cities. Implement the following operations:
+   - Add a new city and its population to the dictionary.
+   - Remove a city from the dictionary.
+   - Update the population of a specific city.
+
+6. Use a dictionary comprehension to create a new dictionary containing only cities with a population greater than 1 million.
+
+Problem 4: Set Indexing and Properties
+
+7. Create two sets with random values. Implement the following operations:
+   - Check if one set is a subset of the other.
+   - Find the union of the two sets.
+   - Calculate the intersection of the sets.
+   - Determine the difference between the sets.
+
+8. Write a program that utilizes a set to remove duplicate elements from a list of strings. Print both the original list and the list after removing duplicates.
+
+Additional Tips:
+
+- Utilize online resources, Python documentation, and course materials to reinforce your understanding.
+- Collaborate with classmates to discuss concepts and problem-solving.
+- Seek assistance from your instructor or classmates if you encounter difficulties.
+
