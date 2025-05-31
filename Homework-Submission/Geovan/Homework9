@@ -1,0 +1,111 @@
+original_list = [1,4,5,6,2,5,9,10,4,2,5]
+#- Use the `map()` function to square each element in the list.
+
+def square(x):
+    return x**2
+
+squared_list =list( map(square, original_list))
+print(squared_list)
+
+#- Use list comprehension to create a new list containing only the even numbers from the original list.
+even_list = [x for x in original_list if x % 2 == 0]
+print(even_list)
+
+#2. Extend the script to:
+   #- Use the `sorted()` function to sort the list in descending order.
+sorted_list = sorted(original_list, reverse=True)
+print(sorted_list)
+
+   #- Remove duplicates from the list without changing the order.
+unique_list = list(dict.fromkeys(original_list))
+print(unique_list)
+
+#3. Create a tuple that represents the RGB values of a color (e.g., `(255, 0, 0)` for red).
+#Write a function that takes a tuple as an argument and prints its length, sum of values, and average.
+rgb_tuple = (255,0,0)
+def rgb(color):
+    length=len(color)
+    total=sum(color)
+    average = total/length
+    
+    print(rgb_tuple)
+    print(length)
+    print(total)
+    print(average)
+
+rgb(rgb_tuple)
+
+#4. Implement a program that converts the RGB tuple into a hexadecimal color code. Print the resulting color code.
+def rgb_to_hex(color):
+    return '#{:02X}{:02X}{:02X}'.format(color[0], color[1], color[2])
+
+rgb_tuple = (123,123,123)
+print(rgb_to_hex(rgb_tuple))
+
+
+##5. Write a Python script that initializes a dictionary representing the population of cities. Implement the following operations:
+cities = {
+    "Perm" : 991162,
+    "Xianyang" : 5096001,
+    "Yingkou" : 2328582,
+    "Bisbee" : 4994}
+print(cities)
+
+##   - Add a new city and its population to the dictionary.
+cities["Los Angeles"] = 3880000
+print(cities)
+
+##   - Remove a city from the dictionary.
+del cities["Yingkou"]
+print(cities)
+
+##   - Update the population of a specific city.
+cities["Perm"] = 1030000
+print(cities)
+
+##6. Use a dictionary comprehension to create a new dictionary containing only cities with a population greater than 1 million.
+
+cities_greater_than_1_million = {
+    city : population
+    for (city, population) in cities.items()
+    if (population > 1000000)
+    }
+print(cities_greater_than_1_million)
+
+##Problem 4: Set Indexing and Properties
+##
+##7. Create two sets with random values. Implement the following operations:
+import random
+
+set1=set(random.sample(range(1, 30), 10))
+set2=set(random.sample(range(1, 30), 7))
+print(set1)
+print(set2)
+
+##   - Check if one set is a subset of the other.
+if set1.issubset(set2):
+    print ("set1 is subset of set2")
+elif set2.issubset(set1):
+    print ("set2 is subset of set1")
+else:
+    print("Neither set is a subset of the other.")
+
+
+##   - Find the union of the two sets.
+union_set = set1.union(set2)
+print(union_set)
+
+##   - Calculate the intersection of the sets.
+intersection_set = set1.intersection(set2)
+print(intersection_set)
+
+##   - Determine the difference between the sets.
+difference_set = set2.difference(set1)
+print(difference_set)
+
+##8. Write a program that utilizes a set to remove duplicate elements from a list of strings. Print both the original list and the list after removing duplicates.
+
+list12 = ["apple", "orange", "banana", "orange", "strawberry","plum"]
+list21=list(set(list12))
+print(list12)
+print(sorted(list21))
