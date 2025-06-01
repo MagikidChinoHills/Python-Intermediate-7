@@ -1,0 +1,40 @@
+Homework Assignment: Mastering Functions, Arguments, Parameters, and Return Statements in Python
+
+Objective: The primary objective of this assignment is to introduce students to the concept of functions in Python, emphasizing the use of arguments, parameters, and return statements.
+
+Problem 1: Basic Function Definitions
+
+1. Write a Python script that defines a function called `greet_user` which takes a user's name as an argument and prints a personalized greeting.
+
+2. Implement a function called `square_number` that takes a number as a parameter, squares it, and returns the result. Print the squared result for a given input.
+
+Problem 2: Function with Default Parameters
+
+3. Create a function named `calculate_area` that calculates and returns the area of a rectangle. The function should take two parameters: length and width. Provide a default value of 1 for both parameters.
+
+4. Use the `calculate_area` function to find the area of a rectangle with a length of 5 units and a width of 3 units. Print the result.
+
+Problem 3: Function with Multiple Return Values
+
+5. Write a function named `divide_numbers` that takes two numbers as parameters and returns both the quotient and remainder when the first number is divided by the second number.
+
+6. Call the `divide_numbers` function with two numbers of your choice, and print both the quotient and remainder.
+
+Problem 4: Function with Variable Number of Arguments
+
+7. Create a function named `calculate_sum` that accepts any number of arguments and returns their sum.
+
+8. Use the `calculate_sum` function to find the sum of 5, 10, and 15. Print the result.
+
+Problem 5: Recursive Function
+
+9. Write a recursive function called `factorial` that calculates the factorial of a given non-negative integer. The factorial of a number is the product of all positive integers less than or equal to that number.
+
+10. Call the `factorial` function with an integer of your choice, and print the result.
+
+Additional Tips:
+
+- Utilize online resources, Python documentation, and course materials to reinforce your understanding.
+- Collaborate with classmates to discuss concepts and problem-solving.
+- Seek assistance from your instructor or classmates if you encounter difficulties.
+
