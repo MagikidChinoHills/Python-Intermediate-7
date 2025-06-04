@@ -1,0 +1,64 @@
+#Problem 1
+
+num1=16
+num2=8
+addition=num1+num2             #Will add num1 and num2 together
+subtraction=num1-num2          #WIll subtract num1 by num2
+multiplication=num1*num2       #will multiply num1 with num2
+division=num1/num2             #divides num1 by num2
+result=num1%num2               #Prints the remainder of "division"
+print("The sum is, ", addition)
+print("The diffrence is, ", subtraction)
+print("The product is, ", multiplication)
+print("The quotient is, ", division)
+print("The remainder is, ", result)
+
+#Problem 2
+if num1==num2:
+    print("Is 16 equal to 8?: True")
+else:
+    print("Is 16 equal to 8?: false")
+
+if num1!=num2:
+    print("Is 16 not equal to 8?: True")
+else:
+    print("Is 16 not equal to 8?: False")
+
+if num1>num2:
+    print("Is 16 greater than 8?: True")
+else:
+    print("Is 16 greater than 8?: False")
+
+if num1<num2:
+    print("Is 16 less than 8?: True")
+else:
+    print("Is 16 less than 8?: False")
+
+if num1>=num2:
+    print("Is 16 greater than or equal to 8?: True")
+else:
+    print("Is 16 greater than or equal to 8?: False?")
+
+if num1<=num2:
+    print("Is 16 less than or equal to 8?: True")
+else:
+    print("Is 16 less than or equal to 8?: False")
+
+if num1>0 and num2<10:
+    print("16 is greater than 0 and 8 is less than 10")
+else:
+    print("false")
+
+if num1==5 or num2==8:
+    print("true")
+else:
+    print("False")
+
+if not(num1 == num2):
+    print("False")
+else:
+    print("True")
+
+
+
+
