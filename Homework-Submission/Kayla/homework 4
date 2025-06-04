@@ -1,0 +1,24 @@
+#Problem 1
+
+num1=float(input("Enter a number: "))
+if num1>0:
+    print("It is a positive")
+else:                                                  #IF NUM1>0, IT"LL PRINT "It is a positive", IF NOT, THE ELSE STATEMENT
+    print("It is a negative")                          # WILL BE USED AND IT'LL PRINT "it is a negative."
+elif num1==0:
+    print("number is equal to 0")
+
+
+#Problem 2
+
+age=float(input("please enter your age: "))
+if age<12:
+    print("You are still a child")
+if age>12 and age<19:
+    print("You are a teenager")
+if age>19 and age<59:
+    print("you are a adult")
+if age>59:
+    print("you are a senior")
+if age==18 and age>18:
+    print("You are the legal age to vote now")
