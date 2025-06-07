@@ -1,0 +1,32 @@
+Greet_user = input("What is your name?")
+print("Hello,", Greet_user, ".")
+
+Number = float(input("Pick any number to be squared."))
+Squared = Number ** 2
+print(Squared)
+
+
+def area(L1, W2):
+    res = L1 * W2
+    return res
+
+length = int(input("Pick a length for a shape"))
+width  = int(input("Pick a width for a shape"))
+pro = area(width, length)
+print("The area is", pro)
+#For 3x5
+length = 5
+width  = 3
+
+pro = area(width, length)
+print("The area is", pro)
+
+
+
+def fib(n):
+    if n <= 1:
+        return n
+    else:
+        return fib(n)
+    
+print(fib(10))
