@@ -1,0 +1,33 @@
+#List: Data structures in Python that allow you to store collections of data/values#
+#Tuple: Basiclaly lists but uses () instead of []
+#Indexing: a way of numbering your list that starts from zero
+#Mutability: Elements can be changed after creation
+#Immutability: Elements can not be changed after creation
+
+#lists are mutable which means it can be chnaged after creation and tuples can not be changed because it is immutable.
+
+#List and tuple indexing is where they start at a base of zero. For example, if there was a list of [1, 2, 3], number 1 would be recognized as 0.
+
+
+
+
+#Problem 1:
+int_list=[3, 6, 8, 8, 9]
+int_list.append(0)
+int_list.remove(3)
+int_list[4]=1
+print(int_list)
+
+#Problem 2:
+fruits=("banana", "coconut", "cherry", "lemon")
+tuple2=("potatoes", "apples", "mango")
+final_tuple= fruits + tuple2
+print(final_tuple)
+
+
+
+#Problem 3:
+#Lists and tuples are two diffrent data types in python. some similarities are the base zero rule.
+#They also store data inside them. Diffrences are that lists are mutable and tuples are immutable.
+
+
