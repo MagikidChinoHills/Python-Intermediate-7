@@ -1,0 +1,24 @@
+#PROBLEM 1:
+
+full_name="Kayla Huang"
+quote="Hello my name is, "
+final=quote+full_name
+print(final)
+first_name=full_name.split()[0]
+print(first_name)
+
+#Problem 2
+
+sentence=(input("Please enter a sentence: "))
+length=len(sentence)
+print(length)
+upper_sentence=sentence.upper()
+print(upper_sentence)
+lower_sentence=sentence.lower()
+print(lower_sentence)
+capitalized_sentence=sentence.capitalize()
+print(capitalized_sentence)
+count_i=sentence.count("i")
+print(count_i)
+check=sentence.endswith("?")
+print(check)
