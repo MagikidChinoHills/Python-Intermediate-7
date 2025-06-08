@@ -1,0 +1,36 @@
+#Problem 1
+person={
+    "name" : "Bob", 
+    "age" : 7,
+    "city" : "New york",
+    "occupation" : "None"
+}
+
+print(person)
+print("\nIndivisual Information: ")
+print("name: ", person['name'])
+print("Age: ", person["age"])
+print("City: ", person["city"])
+print("Occupation: ", person["occupation"])
+    
+person['city']= 'arizona'
+print(person)
+
+
+inventory={
+    "cola" : 3,
+    "fanta" : 5,
+    "sprite" : 4
+}
+
+inventory=["lemonade"]=6
+print(inventory)
+del inventory["cola"]
+print (inventory)
+
+inventory["fanta"]=8
+print inventory
+
+item_to_check="sprite"
+if item_to_check in inventory:
+    print(f"\n{item_in_check} are in inventory.")
