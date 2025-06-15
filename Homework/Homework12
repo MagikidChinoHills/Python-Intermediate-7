@@ -1,0 +1,26 @@
+Homework Assignment: Exploring Built-in Modules and External Libraries in Python
+
+Objective: This assignment is designed to introduce students to the utilization of built-in modules and external libraries in Python, expanding the functionality and capabilities of their programs.
+
+Problem 1: Built-in Modules Exploration
+
+1. Write a Python script that uses the `datetime` module to print the current date and time. Include the formatted date and time in the output.
+
+2. Explore the `random` module to generate a random number between 1 and 10. Print the generated random number.
+
+3. Utilize the `math` module to calculate the square root of a given number. Print the result.
+
+Problem 3: Data Visualization with Matplotlib
+
+6. Install the `matplotlib` library using `pip` (e.g., `pip install matplotlib`). This library is widely used for data visualization.
+
+7. Create a program that generates a simple plot using `matplotlib`. You can plot a mathematical function, or if you have external data, visualize that.
+
+
+
+Additional Tips:
+
+- Utilize online resources, library documentation, and course materials to reinforce your understanding.
+- Collaborate with classmates to discuss concepts and problem-solving.
+
+
