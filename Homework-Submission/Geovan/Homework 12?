@@ -1,0 +1,16 @@
+from datetime import datetime
+
+now = datetime.now()
+print("Current Date and Time:", now)
+
+import random
+random_integer = random.randint(1, 10)
+print(f"Random Number: {random_integer}")
+
+
+import math
+
+Num = int(input("Pick a number to square root."))
+print(math.sqrt(Num))
+
+#idk how to do 6 and 7
