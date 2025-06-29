@@ -1,0 +1,96 @@
+# ===============================================
+# Lesson Plan: File Handling in Python
+# ===============================================
+
+# **Objective:** Teach reading from and writing to files using Python.
+
+# ===============================================
+# 1. Introduction to File Handling
+# ===============================================
+
+# File handling in Python allows you to work with files, read data from them, and write data to them.
+
+# ===============================================
+# 2. Opening and Closing Files
+# ===============================================
+
+# Learn how to open and close files in Python.
+
+# Examples:
+# Opening a file in read mode
+file = open("sample.txt", "r")
+
+# Closing a file
+file.close()
+
+# ===============================================
+# 3. Reading from Files
+# ===============================================
+
+# Explore methods for reading data from files.
+
+# Examples:
+# Reading the entire content of a file
+file = open("sample.txt", "r")
+content = file.read()
+file.close()
+
+# Reading lines from a file
+file = open("sample.txt", "r")
+lines = file.readlines()
+file.close()
+
+# ===============================================
+# 4. Writing to Files
+# ===============================================
+
+# Learn how to write data to files.
+
+# Examples:
+# Writing data to a file
+file = open("output.txt", "w")
+file.write("Hello, World!")
+file.close()
+
+# Appending data to an existing file
+file = open("output.txt", "a")
+file.write("\nThis is a new line.")
+file.close()
+
+# ===============================================
+# 5. Using 'with' Statement
+# ===============================================
+
+# The 'with' statement ensures that files are properly closed after they are used.
+
+# Example:
+with open("sample.txt", "r") as file:
+    content = file.read()
+
+# ===============================================
+# 6. Exercises and Challenges
+# ===============================================
+
+# Exercise 1: Write a Python program that reads a text file and counts the number of words in it.
+# Exercise 2: Create a new file and write a list of names to it, one name per line.
+# Challenge 1: Write a program that copies the contents of one text file to another.
+# Challenge 2: Create a CSV file with data and write a program to read and display the content as a table.
+
+# ===============================================
+# 7. Conclusion
+# ===============================================
+
+# In this lesson, you've learned about file handling in Python, including how to open, read from, and write to files. File handling is essential for working with external data and persisting information.
+
+# Continue practicing file handling to become proficient in working with files in Python.
+
+# ===============================================
+# Vocabulary Words and Definitions
+# ===============================================
+
+# - File Handling: The process of working with files in a computer program, including reading from and writing to files.
+# - Read Mode: A mode in which a file is opened for reading data.
+# - Write Mode: A mode in which a file is opened for writing data, creating a new file or overwriting an existing one.
+# - Append Mode: A mode in which a file is opened for writing data, appending to an existing file.
+# - 'with' Statement: A Python statement used to ensure that a file is properly closed after it is used.
+# - CSV (Comma-Separated Values): A file format for storing data, where values are separated by commas.
