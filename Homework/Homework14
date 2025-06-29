@@ -1,0 +1,41 @@
+Homework Assignment: Mastering File Handling in Python
+
+Objective: This assignment is designed to teach students how to read from and write to files using Python. Students will explore different methods for handling files, including text and binary files.
+
+Problem 1: Reading and Writing Text Files
+
+1. Write a Python script that reads the contents of a text file named `input.txt`. Print the content to the console.
+
+2. Create a new text file named `output.txt`. Write a few lines of text to this file using the script.
+
+3. Modify your script to read the contents of `output.txt` and print it to the console.
+
+Problem 2: CSV File Handling
+
+4. Create a CSV (Comma-Separated Values) file named `data.csv` with some sample data. Include headers for columns.
+
+5. Write a Python script that reads the content of `data.csv` and prints it in a formatted way. Utilize the `csv` module for handling CSV files.
+
+6. Modify your script to append a new row of data to `data.csv`.
+
+Problem 3: Binary File Handling
+
+7. Write a Python script that reads an image file (e.g., a PNG or JPG file) and prints its size in bytes.
+
+8. Create a new image file by copying the content of the original image file. Verify that the new file is an identical copy of the original.
+
+Problem 4: JSON File Handling
+
+9. Write a Python script that creates a dictionary with sample data.
+
+10. Save the dictionary as a JSON file named `data.json`. Verify the content of the JSON file.
+
+11. Modify your script to read the JSON file and print the data.
+
+
+Additional Tips:
+
+- Utilize online resources, Python documentation, and course materials to reinforce your understanding.
+- Collaborate with classmates to discuss concepts and problem-solving.
+- Seek assistance from your instructor or classmates if you encounter difficulties.
+
