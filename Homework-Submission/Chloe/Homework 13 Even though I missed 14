@@ -1,0 +1,87 @@
+from turtle import *
+import random
+def pattern2():
+    color('red')
+def after():
+    color('#003366')
+    write('Done!', align='left', font=('Courier New', 50, "bold"))
+    clear
+    pattern2
+def pattern1():
+    
+    random2 = random.randint(0,5)
+    if random2 == 1:
+        color('blue')
+    elif random2 == 0:
+        color('red')
+    elif random2 == 2:
+        color('yellow')
+    elif random2 == 3:
+        color('green')
+    elif random2 == 4:
+        color('orange')
+    elif random2 == 5:
+        color('purple')
+    shape('turtle')
+    speed(2)
+    fd(100)
+    left(120)
+    fd(100)
+    random2 = random.randint(0,5)
+    if random2 == 1:
+        color('blue')
+    elif random2 == 0:
+        color('red')
+    elif random2 == 2:
+        color('yellow')
+    elif random2 == 3:
+        color('green')
+    elif random2 == 4:
+        color('orange')
+    elif random2 == 5:
+        color('purple')
+    shape('turtle')
+    speed(2)
+    fd(100)
+    left(120)
+    fd(100)
+    random2 = random.randint(0,5)
+    if random2 == 1:
+        color('blue')
+    elif random2 == 0:
+        color('red')
+    elif random2 == 2:
+        color('yellow')
+    elif random2 == 3:
+        color('green')
+    elif random2 == 4:
+        color('orange')
+    elif random2 == 5:
+        color('purple')
+    shape('turtle')
+    speed(2)
+    fd(100)
+    left(120)
+    fd(100)
+    random2 = random.randint(0,5)
+    if random2 == 1:
+        color('blue')
+    elif random2 == 0:
+        color('red')
+    elif random2 == 2:
+        color('yellow')
+    elif random2 == 3:
+        color('green')
+    elif random2 == 4:
+        color('orange')
+    elif random2 == 5:
+        color('purple')
+    shape('turtle')
+    speed(2)
+    fd(100)
+    left(120)
+    fd(100)
+    clear
+    after()
+pattern1()
+mainloop
