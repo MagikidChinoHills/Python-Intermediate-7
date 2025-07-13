@@ -1,0 +1,107 @@
+import random
+import turtle
+
+# Setting Up the Turtle Screen
+def setup_screen(width=800, height=600, bg_color="black"):
+    # create a screen object
+    screen = turtle.Screen()
+    screen.setup(width=width, height=height)
+
+    # set background color
+    screen.bgcolor(bg_color)
+
+    # create a turtle object that will draw
+    artist = turtle.Turtle()
+    artist.speed("fast")
+    artist.penup()
+
+    # return the screen and artist object for the user to use
+    return screen, artist
+
+
+# create a function that will draw a square based on the two passed parameters: turtle and side length
+def draw_square(t, side_length):
+    t.begin_fill()
+    for i in range(4):
+        t.foward(side_length)
+        t.right(360/4)
+    t.end_fill()
+
+# create a function that will draw a circle based on two passed parameters: turtle and radius
+def draw_circle(t, radius):
+    t.begin_fill()
+    t.circle(radius)
+    t.end_fill()
+
+# create a function that will draw a start based on two passed parameters: turtle and size
+def draw_star(t, size):
+    t.begin_fill()
+    for i in range(5): # hint: turn 144 angle
+        t.foward(size)
+        t.right(144)
+    t.end_fill()
+
+# create a function that will draw a triangle based on two passed parameters: turtle and length
+def draw_triangle(t, length):
+    t.begin_fill()
+    for i in range(3):
+        t.foward(length)
+        t.right(360/3)
+    t.end_fill()
+
+# incorporate randomness for different shapes and color
+def draw_random_art(t, num_shapes=10):
+    colors = ["red", "green", "blue", "yellow", "purple", "orange", "pink"]
+    shape_functions = [draw_square, draw_circle, draw_star, draw_triangle]
+
+    # set the turtle's pen down only when drawing and start drawing at a random position
+    for i in range(num_shapes):
+        rand_x = random.random(-300, 300)
+        rand_y = random.randint(-250, 250)
+
+        # for safety, lift the pen up first, go to the random position, and place the pen down
+        t.penup()
+        t.goto(rand_x, rand_y)
+        t.pendown()
+
+        # choose random color
+        chosen_color = random.choice(colors)
+        t.color(chosen_color)
+
+        # choose random shape from the list "shape_functions"
+        shape_func = random.choice(shape_functions)
+
+        # draw the shape based on shape_func
+        if shape_func == draw_square:
+            side_length = random.randint(20, 80)
+            shape_func(t, side_length)
+        elif shape_func == draw_circle:
+            radius = random.randint(10, 60)
+            shape_func(t, radius)
+        elif shape_func == draw_star:
+            size = random.randint(20, 100)
+            shape_func(t, size)
+        elif shape_func == draw_triangle:
+            size = random.randint(20, 70)
+            shape_func(t, size)
+
+# main execution function
+def main():
+    # setting up screen
+    screen, artist = setup_screen()
+
+    # draw the random art
+    try:
+        num_shapes = int(input("Enter number of shapes: "))
+        draw_random_art(artist, num_shapes)
+
+    except ValueError as e:
+        print("Error in configuration:", e)
+        print("Using default number shapes 10...")
+        draw_random_art(artist, 10)
+
+    # keep window open until user decides to close it
+    turtle.done()
+
+if __name__ == "__main__":
+    main()
