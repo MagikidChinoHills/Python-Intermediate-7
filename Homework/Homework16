@@ -1,0 +1,32 @@
+Practice Problem 1: Draw a Grid of Squares
+Problem:
+  Create a new function called draw_grid_of_squares(t, rows, cols, size) that draws a grid of squares using the draw_square function.
+Requirements:
+  The grid should be rows x cols in dimension.
+  Each square should have side length size.
+  Leave a small gap (e.g., 10 pixels) between squares.
+  Make each square a random color from the existing colors list.
+
+Practice Problem 2: Animate a Growing Spiral of Stars
+Problem:
+  Write a function called draw_spiral_stars(t, num_stars) that draws a spiral pattern using stars that gradually increase in size and rotate.
+Requirements:
+  Start from the center of the screen.
+  Each star should be slightly larger and rotated more than the previous one.
+  Change the color for each star randomly.
+  Use t.forward() and t.right() to create the spiral effect.
+
+Practice Problem 3: Add a New Shape – Pentagon
+Problem:
+  Add a new function draw_pentagon(t, length) to draw a filled pentagon shape, then include it in the shape_functions list used by draw_random_art.
+Requirements:
+  Draw a regular 5-sided pentagon.
+  Each side should be length units.
+  Use the correct turning angle (72 degrees).
+  Add the pentagon to the random shape drawing process in draw_random_art.
+
+
+Additional Tips:
+- Utilize online resources, Python documentation, and course materials to reinforce your understanding.
+- Collaborate with classmates to discuss concepts and problem-solving.
+- Seek assistance from your instructor or classmates if you encounter difficulties.
