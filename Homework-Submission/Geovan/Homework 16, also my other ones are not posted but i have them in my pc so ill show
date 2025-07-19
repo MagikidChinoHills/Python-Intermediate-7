@@ -1,0 +1,113 @@
+import turtle
+import random
+
+screen = turtle.Screen()
+screen.setup(width=800, height=600)
+t = turtle.Turtle()
+t.speed("fast")
+colors = ["red", "blue", "green", "yellow", "white", "orange"]# the stuff to make the turtle and screen
+
+def draw_square(t, size, color):
+    t.fillcolor(color)
+    t.begin_fill()
+    for i in range(4):
+        t.forward(size)# the square
+        t.right(90)
+    t.end_fill()# it goes foward then turns 4 times.
+
+def draw_grid_of_squares(t, rows, cols, size):
+    gap = 10
+    for row in range(rows):#these make the 25 cubes.
+        for col in range(cols):#Because the first one is 5 and the other one repeats 1 section lower5 times. 5 x 5 = 25
+            color = random.choice(colors)#Color generator
+            draw_square(t, size, color)#Draw the square
+            t.penup()
+            t.forward(size + gap)#Moves the pen exactly the length of the square and the requested gap, which for this homework is 10 pixels
+            t.pendown()# repeats how many times you (also I'm trying to make it sound more cody like for better grades) request in the rows code
+        t.penup()# runs this code after the requested cubes are created in the code above
+        t.backward((size + gap) * cols)# goes backwards the size and gap and times it by the coloms numnber.
+        t.right(90)#turns down.
+        t.forward(size + gap)#moves down
+        t.left(90)#turns left to get prepared for next row
+        t.pendown()# repeats all the code until 25 cubes are made or the number of rows, times coloms
+
+
+
+draw_grid_of_squares(t, rows=1, cols=1, size=30)# rows, coloms, and the size of the cubes
+
+turtle.done()#Finish code.
+
+#def draw_star(t, size):
+  #  t.begin_fill()
+    #for i in  range (5):
+      #  t.forward(size)
+        #t.right(144)# the star, no way
+    #t.end_fill()
+
+#def draw_spiral_stars(t, num_stars):
+#    size = 1  #Size
+#    angle = 1 #How hard it will rotate
+#    increment = 2 # how much bigger each will get
+
+#    for i in range(num_stars):
+#        draw_star(t, size)#                                                               STAR IS SEMI BROKEN STAR IS SEMI BROKEN STAR IS SEMI BROKEN
+#        t.penup()#                                                                             STAR IS SEMI BROKEN STAR IS SEMI BROKEN STAR IS SEMI BROKEN
+#        t.forward(size / 2)# to center the star
+#        t.right(angle)  #Turning
+#        t.pendown()#Drawing, duh
+#        size += increment  # Increase the size of the next star
+
+#        draw_spiral_stars(t, 1)  # Draw 50 stars in a spiral pattern
+
+#turtle.done()
+       # screen.mainloop()
+
+
+def draw_square(t, side_length):
+    t.begin_fill()
+    for i in range(sides):
+        t.forward(side_length)
+        t.right(360/sides)
+    t.end_fill()
+    
+def draw_circle(t, radius):
+    t.begin_fill()
+    t.circle(radius)
+    t.end_fill()
+
+def draw_star(t, size):
+    t.begin_fill()
+    for i in  range (5):
+        t.forward(size)
+        t.right(144)
+    t.end_fill()
+
+def draw_pentagon(t, size):
+    t.begin_fill()
+    for i in range(5):
+        t.forward(size)
+        t.right(72)
+def draw_triangle(t, length):
+    t.begin_fill()
+    for i in range(3):
+        t.forward(length)
+        t.right(360/3)
+    t.end_fill()
+    
+    Shape_function = random.choice(shape_functions)
+        
+    if shape_function == draw_square:
+        size = random.randint(20,80)
+        shape_function(t, side_length)
+    elif shape_function == draw_circle:
+        size = random.randint(10,60)
+        shape_function(t, radius)
+    elif shape_function == draw_star:
+        size = random.randint(15,75)#Why does my code not work...
+        shape_function(t, size)
+    elif shape_function == draw_triangle:
+        size = random.randint(15,75)
+        shape_function(t, length)
+    elif shape_fuction == draw_pentagon:
+        size = random.randint(10,50)
+        shape_function(t, length)
