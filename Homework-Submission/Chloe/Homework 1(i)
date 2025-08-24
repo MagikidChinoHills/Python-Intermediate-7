@@ -1,0 +1,32 @@
+#Homework 1b
+from turtle import *
+shape('turtle')
+for i in range(0,3):
+    fd(100)
+    left(120)
+clear()
+for i in range(0,6):
+    fd(80)
+    left(60)
+clear()
+color('yellow')
+fillcolor('blue')
+begin_fill()
+for i in range(0,2):
+    fd(150)
+    left(90)
+    fd(75)
+    left(90)
+end_fill()
+clear()
+fillcolor('red')
+begin_fill()
+for i in range(0,6):
+    left(144)
+    fd(100)
+end_fill()
+clear()
+penup()
+home()
+pendown()
+circle(100)
