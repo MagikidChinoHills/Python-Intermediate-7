@@ -1,0 +1,60 @@
+#Homework 2b
+from turtle import *
+import random
+import math
+speed(0)
+colors = ["red","orange","yellow","green","blue","purple"]
+color2 = ["sky blue","turquoise","light green"]
+for i in range(100): #Problem 1 & 2
+    pencolor(random.choice(colors))
+    qian = random.randint(10,50)
+    fd(qian)
+    turn = random.randint(1,2)
+    if turn == 1:
+       right(random.randint(0,180))
+    elif turn == 2:
+        left(random.randint(0,180))
+
+global size
+size = 20
+
+
+def tspi(): #Problem 4
+    clear()
+    x = random.randint(-300, 300)
+    y = random.randint(-300, 300)
+    penup()   
+    goto(x,y)
+    pendown() 
+    for i in range(int(360/size)):
+        color(random.choice(colors))
+        circle(10)
+        right(size)
+    x = random.randint(-300, 300)
+    y = random.randint(-300, 300)
+    penup()   
+    goto(x,y)
+    pendown()
+    for i in range(int(360/size)):
+        color(random.choice(color2))
+        circle(5)
+        right(size)
+    x = random.randint(-300, 300)
+    y = random.randint(-300, 300)
+    penup()   
+    goto(x,y)
+    pendown()
+    for i in range(int(360/size)):
+        color(random.choice(color2))
+        circle(15)
+        right(size)
+    home()
+def spirograph(): #Problem 3 & 5        
+    for i in range(int(360/size)):
+        color(random.choice(colors))
+        circle(random.randint(50,150))
+        right(size)
+    tspi()
+
+home()
+spirograph()
