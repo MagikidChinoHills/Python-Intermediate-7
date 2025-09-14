@@ -1,0 +1,74 @@
+#LEsson 7
+from turtle import * 
+import random
+color("#FFBD00")
+speed(0)
+"""
+def tr(scribble):
+    for i in range(100):
+        turn = random.randint(-360,360)
+        fd(scribble)
+        right(turn)
+tr(random.randint(75,100))
+"""
+circle(50)
+color("pink")
+fd(50)
+left(135)
+fd(50)
+for i in range(5):
+    left(175)
+    fd(50)
+home()
+left(180)
+fd(150)
+color("turquoise")
+colornum = 0
+for i in range(3):
+    if colornum == 0:
+        color("red")
+        pensize(7)
+        for i in range(36):
+            circle(95)
+            right(50)
+    elif colornum == 1:
+        color("blue")
+        pensize(2)
+        for i in range(36):
+            circle(95)
+            right(50)
+    elif colornum == 2:
+        color("yellow")
+        pensize(9)
+        for i in range(36):
+            circle(95)
+            right(50)
+    colornum += 1
+    penup()
+    fd(380)
+    right(120)
+    fd(380)
+    pendown()
+for i in range(3):
+    if colornum == 0:
+        color("red")
+        pensize(7)
+        for i in range(36):
+            circle(95)
+            right(50)
+    elif colornum == 1:
+        color("blue")
+        pensize(2)
+        for i in range(36):
+            circle(95)
+            right(50)
+    elif colornum == 2:
+        color("yellow")
+        pensize(9)
+        for i in range(36):
+            circle(95)
+            right(50)
+    colornum += 1
+    penup()
+    fd(380)
+    pendown()
