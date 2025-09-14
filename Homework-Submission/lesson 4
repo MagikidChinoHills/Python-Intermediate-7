@@ -1,0 +1,26 @@
+import turtle
+import random
+
+t = turtle.Turtle()
+
+
+
+t.speed(0)
+def star(length):
+    for i in range(5):
+        t.forward(length)
+        t.right(144)
+def draw_spirograph(size):
+    for i in range(int(360/size)):
+        t.penup
+        t.left(90)
+        t.goto(0,0)
+        t.pencolor(random.choice(["red","blue","green","yellow","purple","orange"]))
+        star(360)
+        t.right(size)
+
+draw_spirograph(5)
+
+
+
+
