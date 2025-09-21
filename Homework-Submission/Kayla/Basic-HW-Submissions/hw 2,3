@@ -1,0 +1,132 @@
+#hw 1
+#problem 1
+
+import turtle as t
+import random
+t.speed(100)
+
+'''
+
+for i in range(50):
+    distance = random.randint(10, 50)
+    angle = random.randint(0, 180)
+    t.fd(distance)
+    t.rt(angle)
+
+t.done()
+
+#problem 2
+
+
+colors=["red", "blue", "green", "yellow", "purple"]
+for i in range(50):
+    t.pencolor(random.choice(colors))
+    distance = random.randint(10, 50)
+    angle = random.randint(0, 180)
+    t.fd(distance)
+    t.rt(angle)
+t.done()
+
+#Problem 3
+
+def variable_spirograph(angle):
+    for i in range(int(360/angle)):
+        radius = random.randint(50, 150)
+        t.circle(radius)
+        t.right(angle)
+variable_spirograph(10)
+t.done()
+
+
+colors=["red", "blue", "green", "yellow", "purple"]
+def spirograph(angle, x, y):
+    t.penup()
+    t.goto(x,y)
+    t.pendown()
+    for i in range(int(360/angle)):
+         t.pencolor(random.choice(colors))
+         t.circle(100)
+         t.rt(angle)
+spirograph(5, -200, 0)
+spirograph(10, 0, 0)
+spirograph(15, 200, 0)
+t.done()
+
+
+#HW 3
+
+#problem #1
+
+length=1
+for i in range(1000):
+    t.fd(length)
+    t.right(30)
+    length+=1
+t.done()
+
+
+#problem 2
+
+def draw_diamond(size):
+    for i in range(2):
+        t.fd(size)
+        t.lt(60)
+        t.fd(size)
+        t.lt(120)
+for i in range(12):
+    draw_diamond(100)
+    t.lt(30)
+t.done()
+
+
+#Problem 3
+t.pensize(30)
+t.penup()
+t.goto(0, -100)
+t.pendown()
+t.speed(3)
+t.color("red", "pink")
+t.begin_fill()
+t.lt(50)
+t.fd(266)
+t.circle(100, 200)
+t.rt(140)
+t.circle(100, 200)
+t.fd(266)
+t.end_fill()
+t.done()
+
+#problem 4
+
+t.color('blue')
+def draw_petals():
+    for i in range(2):
+        t.circle(100, 60)
+        t.lt(120)
+        t.circle(100, 60)
+        t.lt(120)
+
+for i in range(36):
+    draw_petals()
+    t.rt(10)
+t.done()
+'''
+#Problem 4
+
+colors=['red', 'blue', 'green', 'yellow', 'purple', 'orange', 'pink']
+def draw_square(size, depth):
+    if depth == 0:
+        return
+    t.pencolor(random.choice(colors))
+    for i in range(4):
+        t.fd(size)
+        t.rt(90)
+    t.penup()
+    t.fd(size/4)
+    t.rt(90)
+    t.fd(size/4)
+    t.lt(90)
+    t.pendown()
+    draw_square(size/2, depth-1)
+draw_square(200, 5)
+t.done()
