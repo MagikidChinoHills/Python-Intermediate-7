@@ -1,0 +1,18 @@
+Problem 1: Move Multiple Shapes (Create a Tkinter application that moves two rectangles across the canvas)
+- Create a canvas widget.
+- Create two rectangles with different colors and sizes.
+- Move the rectangles in different directions: one moves right, and the other moves left.
+- Use the after method to continuously move the rectangles.
+
+Problem 2: Bouncing Ball
+- Create a canvas widget.
+- Draw a circle (ball) on the canvas.
+- Make the ball move diagonally.
+- If the ball hits any edge of the canvas, reverse its direction (so it "bounces").
+
+Problem 3: Color Changing Rectangle
+- Create a canvas widget.
+- Draw one rectangle.
+- Add a button labeled "Change Color" below the canvas.
+- Each time the button is clicked, the rectangle changes to a random color.
+
