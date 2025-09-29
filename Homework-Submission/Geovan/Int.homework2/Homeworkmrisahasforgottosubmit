@@ -1,0 +1,68 @@
+import tkinter as tk
+import math
+import random
+root = tk.Tk()
+root.title("Pong")
+
+
+canvas = tk.Canvas(root, width = 800, height = 400, bg = "White")
+canvas.pack()
+
+
+rec = canvas.create_rectangle(30, 200, 50, 250, fill= "Red")
+
+ball = canvas.create_oval(390, 190, 410, 210, fill="White")
+
+sqr = canvas.create_rectangle(750, 150, 600, 250, fill= "Blue")
+
+def moves(event):
+    key = event.keysym
+    if key == "w":
+        canvas.move(rec, 0, -20)
+    elif key == "s":
+        canvas.move(rec, 0, 20)
+    elif key == "a":
+        canvas.move(rec, -20, 0)
+    elif key == "d":
+        canvas.move(rec, 20, 0)
+
+    elif key == "Up":
+        canvas.move(sqr, 0, -20)
+    elif key == "Down":
+        canvas.move(sqr, 0, 20)
+    elif key == "Left":
+        canvas.move(sqr, -20, 0)
+    elif key == "Right":
+        canvas.move(sqr, 20, 0)
+canvas.bind_all("<KeyPress>", moves)
+
+
+
+ball_dx = 7
+ball_dy = 7
+
+def move_ball():
+    global ball_dx, ball_dy, ball_pos, player1_score, player2_score, score1_display, score2_display
+    canvas.move(ball, ball_dx, ball_dy)
+    ball_pos = canvas.coords(ball)
+
+
+    
+    if ball_pos[1] <= 0 or ball_pos[3] >=400:
+        ball_dy = -ball_dy
+    if ball_pos[0] <= 0 or ball_pos[2] >=800:
+        ball_dx = -ball_dx
+
+    root.after(50, move_ball)
+move_ball()
+
+
+
+global rect
+rect = canvas.create_rectangle(300, 200, 100, 505, fill= "Black")
+
+def change():
+    colors = ["Red","Orange","Yellow", "Green", "Blue","Purple", "Black"]
+    root.config(rect  = random.choice(colors))
+button = tk.Button(root, text = "Click Me", command = change)
+button.pack(pady=0)
