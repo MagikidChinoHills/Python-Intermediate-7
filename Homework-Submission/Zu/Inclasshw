@@ -35,32 +35,30 @@ score_label.pack(pady=10)
 
 # questions
 def show_question():
-    """Display the current question"""
     if current_q < len(quiz_data):
         question_label.config(text=quiz_data[current_q]["question"])
         feedback_label.config(text="")
         score_label.config(text=f"Correct: {correct_count}   Wrong: {wrong_count}")
         answer_entry.delete(0, tk.END)
     else:
-        messagebox.showinfo("Quiz Finished", f"You got {correct_count} correct and {wrong_count} wrong.")
+        messagebox.showinfo("HW Finished", f"You got {correct_count} correct and {wrong_count} wrong.")
         root.destroy()
 
 def check_answer():
-    """Check user's answer"""
     global correct_count, wrong_count, current_q
 
     user_answer = answer_entry.get().strip().lower()
     correct_answers = quiz_data[current_q]["answers"]
 
     if user_answer in correct_answers:
-        feedback_label.config(text="✅ Correct!", fg="green")
+        feedback_label.config(text= "Correct", fg="green")
         correct_count += 1
     else:
-        feedback_label.config(text="❌ Wrong!", fg="red")
+        feedback_label.config(text="Wrong, try again", fg="red")
         wrong_count += 1
 
     current_q += 1
-    root.after(1000, show_question)  # Move to next question after 1 second delay
+    root.after(1000, show_question) 
 
 
 check_button = tk.Button(root, text="Check", command=check_answer, font=("Arial", 12))
