@@ -1,0 +1,67 @@
+import tkinter as tk
+from tkinter import messagebox
+
+# Create main window
+root = tk.Tk()
+root.title("inclasshw")
+root.geometry("400x300")
+
+# Questions and answers
+quiz_data = [
+    {"question": "Who is LBJ?", "answers": ["lebron james", "the goat"]},
+    {"question": "What is the capital of France?", "answers": ["paris"]},
+    {"question": "What color is the sky?", "answers": ["blue"]},
+    {"question": "What is 5 + 5?", "answers": ["10", "ten"]},
+    {"question": "Who wrote Harry Potter?", "answers": ["jk rowling", "j.k. rowling"]},
+]
+
+# Counters
+correct_count = 0
+wrong_count = 0
+current_q = 0
+
+# Widgets
+question_label = tk.Label(root, text="", font=("Arial", 16), wraplength=350)
+question_label.pack(pady=20)
+
+answer_entry = tk.Entry(root, font=("Arial", 14))
+answer_entry.pack()
+
+feedback_label = tk.Label(root, text="", font=("Arial", 12))
+feedback_label.pack(pady=10)
+
+score_label = tk.Label(root, text="", font=("Arial", 12))
+score_label.pack(pady=10)
+
+# questions
+def show_question():
+    """Display the current question"""
+    if current_q < len(quiz_data):
+        question_label.config(text=quiz_data[current_q]["question"])
+        feedback_label.config(text="")
+        score_label.config(text=f"Correct: {correct_count}   Wrong: {wrong_count}")
+        answer_entry.delete(0, tk.END)
+    else:
+        messagebox.showinfo("Quiz Finished", f"You got {correct_count} correct and {wrong_count} wrong.")
+        root.destroy()
+
+def check_answer():
+    """Check user's answer"""
+    global correct_count, wrong_count, current_q
+
+    user_answer = answer_entry.get().strip().lower()
+    correct_answers = quiz_data[current_q]["answers"]
+
+    if user_answer in correct_answers:
+        feedback_label.config(text="✅ Correct!", fg="green")
+        correct_count += 1
+    else:
+        feedback_label.config(text="❌ Wrong!", fg="red")
+        wrong_count += 1
+
+    current_q += 1
+    root.after(1000, show_question)  # Move to next question after 1 second delay
+
+
+check_button = tk.Button(root, text="Check", command=check_answer, font=("Arial", 12))
+check_button.pack(pady=10)
