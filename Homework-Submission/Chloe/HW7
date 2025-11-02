@@ -1,0 +1,79 @@
+import tkinter as tk
+from tkinter import messagebox
+root = tk.Tk()
+root.geometry("300x300")
+root.title("To-do-list")
+tasks = []
+completed_status = []
+tasklb = []
+totaltasks = "0"
+def updatelb():
+    tasklb.delete(0, tk.END)
+    for index, task in enumerate(tasks):
+        status = "(completed)" if completed_status[index] else "(incomplete)"
+        tasklb.insert(tk.END, f"{index+1}.{task}{status}")
+    updatedstatus()
+def updatedstatus():
+    completedc = sum(completed_status)
+    completed_status.append(completedc)
+    uncompletedc = len(tasks) - completedc
+    completedlb.config(text=f"Completed tasks: {completedc}")
+    uncompletedlb.config(text=f"Uncompleted tasks: {uncompletedc}")
+    totaltasks = len(tasks)
+    num_of_tasks.config(text=f"Total tasks:{totaltasks}.")
+def addtask():
+    task = taskentry.get()
+    if not "" in task:
+        task.strip()
+        tasks.append(task)
+        completed_status.append(False)
+        updatelb() 
+        taskentry.delete(0, tk.END)
+    else:
+        messagebox.showwarning("Warning", "Enter a task.")
+def deletetask():
+    try:
+        selectedtaskindex = tasklb.curselection()[0]
+        del tasks[selectedtaskindex]
+        del completed_status[selectedtaskindex]
+        updatelb()
+    except IndexError():
+        messagebox.showwarning("Warning", "YOU NEED TO SELECT A TASK TO YEET")
+def  markcompleted():
+    try:
+        selectedtaskindex = tasklb.curselection()[0]
+        completed_status[selectedtaskindex] = True
+        updatelb()
+    except IndexError:
+        messagebox.showwarning("Warning", "YOU NEED TO SELECT A TASK TO COMPLETE")
+def toggle_task():
+    try:
+        selectedtaskindex = tasklb.curselection()[0]
+        if completed_status[selectedtaskindex] == True:
+            completed_status[selectedtaskindex] = False
+            updatelb()
+        else:
+            completed_status[selectedtaskindex] = True
+            updatelb()
+    except IndexError:
+        messagebox.showwarning("Warning", "YOU NEED TO SELECT A TASK TO CHANGE")
+taskentry = tk.Entry(root, width=40)
+taskentry.pack(pady=10)
+addtasks = tk.Button(root, text="Add task", command=addtask)
+addtasks.pack(pady=5)
+yeettask = tk.Button(root, text="Delete task", command=deletetask)
+yeettask.pack(pady=5)
+marktasks = tk.Button(root, text="Mark completed task", command=markcompleted)
+marktasks.pack(pady=5)
+toggle = tk.Button(root, text="Change task status", command=toggle_task)
+toggle.pack(pady=5)
+tasklb = tk.Listbox(root, width=50, height=15)
+tasklb.pack(pady=10)
+completedlb = tk.Label(root, text = "completed tasks: 0")
+completedlb.pack()
+uncompletedlb = tk.Label(root, text = "uncompleted tasks: 0")
+uncompletedlb.pack()
+num_of_tasks = tk.Label(root, text = "Total tasks: 0")
+num_of_tasks.pack()
+root.mainloop()
+
