@@ -1,0 +1,47 @@
+#HOmework 3
+from turtle import *
+shape("turtle")
+speed(0)
+for i in range(111):
+    it = i + 2
+    if i != 1:
+        ig = i / 2
+    else:
+        ig = 1
+    pensize(ig)
+    fd(it)
+    right(20)
+pu()
+home()
+pensize(1)
+pd()
+speed(6)
+for i in range(100):
+    fd(0)
+clear()
+for i in range(4):
+    for i in range(3):
+        left(60)
+        fd(100)
+        right(180)
+    right(60)
+#This doesn't make a diamond, but, still
+pu()
+home()
+pd()
+left(180)
+right(45)
+fd(120)
+right(90)
+fd(60)
+right(90)
+fd(60)
+left(90)
+fd(60)
+right(90)
+fd(60)
+right(90)
+fd(120)
+
+
+
