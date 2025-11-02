@@ -23,8 +23,11 @@ def updatedstatus():
     num_of_tasks.config(text=f"Total tasks:{totaltasks}.")
 def addtask():
     task = taskentry.get()
-    if not "" in task:
+    if task != "":
         task.strip()
+        if task != "":
+            messagebox.showwarning("Warning", "Enter a task.")
+            pass()
         tasks.append(task)
         completed_status.append(False)
         updatelb() 
